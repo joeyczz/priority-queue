@@ -14,7 +14,15 @@ interface PriorityQueueOptions<T> {
  * @param a
  * @param b
  */
-const defaultPriorityFn = (a: any, b: any) => a < b;
+const defaultPriorityFn = (a: any, b: any) => {
+  if (typeof a !== typeof b) {
+    throw `error data type with ${typeof a} ${typeof b}`;
+  }
+  if (typeof a !== "number" && typeof a !== "string") {
+    throw `error data type with ${typeof a} ${typeof b}`;
+  }
+  return a < b;
+};
 
 /**
  * 返回父节点index
