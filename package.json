@@ -13,6 +13,7 @@
     "lint": "eslint --ext .js,.ts ./",
     "prettier": "prettier ./src --write",
     "test": "jest",
+    "codecov": "codecov",
     "clean": "rimraf ./lib",
     "build": "npm run clean && rollup -c rollup.config.js"
   },
