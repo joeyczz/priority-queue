@@ -1,4 +1,6 @@
 # priority-queue
+[![codecov](https://codecov.io/gh/joeyczz/priority-queue/branch/main/graph/badge.svg?token=25AFW589LG)](https://codecov.io/gh/joeyczz/priority-queue)
+
 
 # ts 优先队列 实现
 
