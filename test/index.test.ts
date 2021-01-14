@@ -46,3 +46,19 @@ test("priorityQueue class no fn throws error", () => {
       })
   ).toThrowError();
 });
+
+test("priorityQueue isEmpty fn", () => {
+  const priorityQueue = new PriorityQueue<number>();
+
+  priorityQueue.add(9);
+
+  const noEmpty = priorityQueue.isEmpty();
+
+  expect(noEmpty).toBe(false);
+
+  priorityQueue.pool();
+
+  const empty = priorityQueue.isEmpty();
+
+  expect(empty).toBe(true);
+});
