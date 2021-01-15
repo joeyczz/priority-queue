@@ -1,6 +1,6 @@
 import path from "path";
 import ts from "rollup-plugin-typescript2";
-import { uglify } from "rollup-plugin-uglify";
+import { terser } from "rollup-plugin-terser";
 // eslint插件
 import { eslint } from "rollup-plugin-eslint";
 import babel from "@rollup/plugin-babel";
@@ -38,9 +38,10 @@ export default {
     tsPlugin,
     babel({
       exclude: "node_modules/**",
+      babelHelpers: "bundled",
       extensions,
     }),
-    uglify(),
+    terser(),
     // BabelPlugin({ exclude: "node_modules/**" }),
   ],
 };
