@@ -80,6 +80,7 @@ class PriorityQueue<T> {
    * 上浮调整
    */
   private upAdjust() {
+    /* istanbul ignore next */
     if (this.vals.length <= 0) return;
     let childIndex = this.vals.length - 1;
     let parentIndex = getParentIndex(childIndex);

@@ -47,6 +47,15 @@ test("priorityQueue class no fn throws error", () => {
   ).toThrowError();
 });
 
+test("priorityQueue default fn with diff type throws error", () => {
+  const priorityQueue = new PriorityQueue<number>({
+    initial: [3, 2, 5, 7],
+    // priorityFn: (a, b) => a > b,
+  });
+
+  expect(() => priorityQueue.add(("2" as unknown) as number)).toThrowError();
+});
+
 test("priorityQueue isEmpty fn", () => {
   const priorityQueue = new PriorityQueue<number>();
 
