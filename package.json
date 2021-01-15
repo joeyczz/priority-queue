@@ -1,13 +1,17 @@
 {
   "name": "@joey/priority-queue",
   "version": "1.0.0",
+  "description": "a js/ts priority queue implementation",
+  "author": "Joey <chenzhuo1029@sina.com>",
   "main": "./lib/index.min.js",
   "typings": "./lib/index.d.ts",
-  "author": "Joey",
   "license": "MIT",
   "keywords": [
     "priority",
     "queue"
+  ],
+  "files": [
+    "lib"
   ],
   "scripts": {
     "lint": "eslint --ext .js,.ts ./",
