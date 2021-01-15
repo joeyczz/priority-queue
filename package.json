@@ -1,5 +1,5 @@
 {
-  "name": "@joey/priority-queue",
+  "name": "@joey-c/priority-queue",
   "version": "1.0.0",
   "description": "a js/ts priority queue implementation",
   "author": "Joey <chenzhuo1029@sina.com>",
